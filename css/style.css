@@ -1,7 +1,20 @@
+.button {                /*Default css for commmon properties*/
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(47, 139, 230);
+    padding: 0px 26px;
+}
+.button span {
+    color: white;
+}
+
 .header {
     background: linear-gradient(rgba(0,0,0,0.702), rgba(0,0,0,0.702)),
-                         url("../images/banner.png") 1000px 170px;
+                         url("../images/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
+    color: white;
 }
 
 .logo-area img {
@@ -19,37 +32,73 @@
 
 .nav-menu li a {
     text-decoration: none;
-    color: white;
     line-height: 2.143;
+    color: white;
 }
 .cart {
     width: 42px;
     height: 20px;
 }
+.cart-icon {
+    font-size: 18px;
+    line-height: 1.667;
+}
 .items-counter {
-    color: white;
     font-size: 12px;
     font-weight: bold;
-    text-transform: uppercase;
     line-height: 2.5;
-    text-align: center;
     border-radius: 50%;
     background-color: rgba(134, 145, 157, 0.502);
+    
+}
+  
+
+.search-icon {
+    display: none;
+}
+.login-button {
+    font-size: 13px;
+    line-height: 2.308;
+}
+.header-bottom-buttons {
+    width: 55%;
+    margin: auto;
+}
+.view-products span, .see-pricing span{
+    font-size: 18px;
+    line-height: 2.78;
+}
+.see-pricing {
+    background: #86919d;
+    margin: auto;
+}
+  
+
+.main-content-wrapper {
+    background: #f1f5f8;
+}
+.join-us-wrapper {
+    background: url("../images/join-us-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.testimonials-wrapper {
+    background: #f1f5f8;
 }
 
+/*Styling footer*/
+.footer {
+    background: #21272c;
+    color: #444a4f;
+}
+.copyright-area {
+    float: left;
+}
+.copyright-area span {
+    font-size: 14px;
+    line-height: 1.714;
+}
 
-
-.___ {
-    font-size: 18px;
-    font-family: "FontAwesome";
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
-    line-height: 1.667;
-    text-align: right;
-    position: absolute;
-    left: 1346.988px;
-    top: 33.497px;
-    z-index: 455;
-  }
-  
-  
+.contact-area {
+    display: none;
+}

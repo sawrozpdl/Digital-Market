@@ -5,14 +5,39 @@
 }
 
 @media only screen and (min-width: 768px) {
-    
+    .header {
+        background-size: cover;
+    }
 }
 
 @media only screen and (min-width: 940px) {
     
+
 }
 
 @media only screen and (min-width: 1200px) {
-    
+
+    .container {
+        max-width: 1200px;
+        padding: 0px 15px;
+        margin: 0px auto;
+    }
+
+    .contact-area {
+        display: block;
+        float: right;
+    }
+    .contact-area li {
+        list-style: none;
+        float: left;
+        margin-left: 20px;
+    }
+    .contact-area li a{
+        text-decoration: none;
+    }
+    .fa {
+        color: white;
+        font-size: 16px;
+        line-height: 2.688;
+    }
 }
-  
