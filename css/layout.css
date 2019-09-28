@@ -1,0 +1,15 @@
+.container {
+    min-width: 320px;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+
+.logo-area {
+    width: 100%;
+}
+
+.logo-area img {
+    display: block;
+    margin: auto;
+}
+  

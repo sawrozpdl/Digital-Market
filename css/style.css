@@ -1,0 +1,55 @@
+.header {
+    background: linear-gradient(rgba(0,0,0,0.702), rgba(0,0,0,0.702)),
+                         url("../images/banner.png") 1000px 170px;
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.logo-area img {
+    display: block;
+    margin: auto;
+}
+
+.nav-area {
+    box-shadow: inset 0px -4px 0px 0px rgba(255, 255, 255, 0.2);
+}
+
+.nav-menu li {
+    list-style: none;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: white;
+    line-height: 2.143;
+}
+.cart {
+    width: 42px;
+    height: 20px;
+}
+.items-counter {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 2.5;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgba(134, 145, 157, 0.502);
+}
+
+
+
+.___ {
+    font-size: 18px;
+    font-family: "FontAwesome";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.667;
+    text-align: right;
+    position: absolute;
+    left: 1346.988px;
+    top: 33.497px;
+    z-index: 455;
+  }
+  
+  
