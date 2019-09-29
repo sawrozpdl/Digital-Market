@@ -129,7 +129,7 @@
     }
     .nav-home::after {
         content: "\2304"; 
-        padding: 0px 16px; 
+        padding: 0px 15px; 
         font-size: 22px;
         position: relative;
         bottom: 6px;
