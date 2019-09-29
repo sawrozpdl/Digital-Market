@@ -13,10 +13,43 @@
 @media only screen and (min-width: 768px) {
     .header {
         background-size: cover;
+        background-position: center;
     }
-
+    .header-content {
+        padding-bottom: 0.1%;
+    }
     .header-bottom {
         display: block;
+        margin: calc(20px + 10%) auto;
+    }
+    .header-bottom h1 {
+        font-size: calc(30px + 15%);
+        font-weight: bold;
+        line-height: 1.258;
+        text-align: center;
+    }
+    .header-bottom p {
+        font-size: 20px;
+        line-height: 1.6;
+        text-align: center;
+        margin: calc(10px + 2%) auto;
+    }
+    .header-bottom-buttons {
+        margin: auto;
+        text-align: center;
+    }  
+    .view-products, .see-pricing {
+        margin: 0px 15px;
+    }
+    .view-products span, .see-pricing span{
+        font-size: 18px;
+        line-height: 3.38;
+    }
+    .see-pricing {
+        background: #86919d;  
+    }
+    .search-area {
+        bottom: 27px;
     }
     .drop-down-search {
         width: 16%;
@@ -39,11 +72,105 @@
         padding: 0px 15px;
         margin: 0px auto;
     }
+    .header {
+        background-size: cover;
+    } 
+    .fa.burger-menu {
+        display: none;
+    }
+    .fa.search-icon {
+        display: block;
+    }
+    .header-top {
+        border-bottom: 4px solid rgba(255, 255, 255, 0.2);
+    }
+    .logo-area {
+        width: auto;
+        float: left;
+    }
+    .nav-area {
+        border-bottom: none;
+        border-top: none;
+        float: right;
+        width: 62%;
+        line-height: 4;
+    }
+    .nav-menu {
+        display: block;
+        background: none;
+        float: left;
+        width: 74%;
+        margin: 0px;
+        padding: 0px;
+        border-radius : 0px;
+    }
+    .nav-status {
+        width: 23%;
+        float: right;
+    }
+    .cart-area {
+        float: right;
+        width: 82%;
+    }
+    .fa.search-icon {
+        float: left;
+        font-size: 18px;
+        line-height: 5.1;
+    }
+    
+    .nav-menu li {
+        float: left;
+        padding: 0px 21px;
+    }
+    .nav-menu li a {
+        font-size: 16px;
+        line-height: 5.74;
+        letter-spacing: 0.5px;
+    }
+    .nav-home::after {
+        content: "\2304"; 
+        padding: 0px 16px; 
+        font-size: 22px;
+        position: relative;
+        bottom: 6px;
+        cursor: pointer;
+    }
+    .nav-menu::after {
+        content: "|";
+        line-height: 5.74;
+        color: grey;
+    }
+    .fa.cart-icon {
+        font-size: 18px;
+        line-height: 5.1;
+    }
+    .login-button span {
+        font-size: 13px;
+        line-height: 3.1;
+    }
+
+    .header-content {
+        padding-bottom: 1%;
+    }
+    .header-bottom {
+        margin: 120px auto;
+    }
+    .header-bottom h1 {
+        font-size: 60px;
+    }
+    .header-bottom p {
+        margin: 30px auto;
+    }
+
+
+    .search-area {
+        bottom: 37px;
+    }
     .drop-down-search {
         font-size: 18px;
     }
     .search-bar-wrapper {
-        padding: 24.2px 10px;
+        padding: 24px 10px;
     }
     .search-bar {
         font-size: 18px;
@@ -53,7 +180,9 @@
         line-height: 3.9;
     }
       
-
+    .header-bottom {
+        width: 71%;
+    }
 
 
     .contact-area {

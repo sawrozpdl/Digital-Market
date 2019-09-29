@@ -7,17 +7,18 @@
 .button span {
     color: white;
 }              
-body {
-    background: red;
-}
 /*Main styling starts here*/
 
 .header {
     background: linear-gradient(rgba(0,0,0,0.702), rgba(0,0,0,0.702)),url("../images/banner.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
     color: white;
+}
+.header-content {
+    padding-bottom: 12%;
 }
 .logo-area img {
     display: block;
@@ -38,14 +39,14 @@ body {
 }
 .nav-menu {
     display: none;
-    width: calc(60px + 20%);
+    width: calc(40px + 20%);
     float: left;
     position: relative;
     background:  rgb(47, 139, 230);
     border-radius: 12px;
     padding: 5px;
     margin: 8px 12px;
-    animation: zoom 0.8s;
+    animation: zoom 0.5s;
 }
 .nav-menu li {
     list-style: none;
@@ -93,18 +94,6 @@ body {
     font-size: 16px;
     line-height: 1.7;
 }
-.header-bottom-buttons {
-    width: 55%;
-    margin: auto;
-}
-.view-products span, .see-pricing span{
-    font-size: 18px;
-    line-height: 2.78;
-}
-.see-pricing {
-    background: #86919d;
-    margin: auto;
-}
 
 .header-bottom {
     display: none;
@@ -113,16 +102,18 @@ body {
 /*Body  styling*/
 .main-content-wrapper {
     background: #f1f5f8;
-    background:red;
 }
   
 .search-area {
     width: 100%;
-    margin: 20px auto;
+    margin: auto;
     background: white;
     border-radius: 4px;
+    position: relative;
+    bottom: 3.2vh;
 }
 .drop-down-search {
+    background: white;
     font-size: calc(8px + 0.4vw);
     border: none;
     color: grey;
