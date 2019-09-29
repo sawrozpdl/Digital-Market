@@ -1,4 +1,4 @@
-.button {                /*Default css for commmon properties*/
+.button {                /*Default css for commmon properties in whole page*/
     border: none;
     border-radius: 4px;
     background-color: rgb(47, 139, 230);
@@ -6,59 +6,68 @@
 }
 .button span {
     color: white;
-}
-
+}                      
+/*Main styling starts here*/
 .header {
-    background: linear-gradient(rgba(0,0,0,0.702), rgba(0,0,0,0.702)),
-                         url("../images/banner.png");
+    background: linear-gradient(rgba(0,0,0,0.702), rgba(0,0,0,0.702)),url("../images/banner.png");
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
     color: white;
 }
-
 .logo-area img {
     display: block;
     margin: auto;
+    padding: 16px 0px;
 }
-
 .nav-area {
-    box-shadow: inset 0px -4px 0px 0px rgba(255, 255, 255, 0.2);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
 }
-
+.nav-menu {
+    display: none;
+    position: absolute;
+    top: 119px;
+    width: 94.56%;
+    background:  rgb(47, 139, 230);
+}
 .nav-menu li {
     list-style: none;
 }
-
 .nav-menu li a {
     text-decoration: none;
-    line-height: 2.143;
+    line-height: 2;
     color: white;
 }
-.cart {
-    width: 42px;
-    height: 20px;
+.fa.burger-menu {
+    float: left;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 1.6;
 }
-.cart-icon {
-    font-size: 18px;
-    line-height: 1.667;
+.nav-status {
+    width: 100%;
+}
+.cart-area {
+    float: right;
+}
+.fa.search-icon {
+    display: none;
+}
+.fa.cart-icon {
+    font-size: 16px;
+    line-height: 1.8;
 }
 .items-counter {
     font-size: 12px;
     font-weight: bold;
-    line-height: 2.5;
     border-radius: 50%;
     background-color: rgba(134, 145, 157, 0.502);
-    
-}
-  
-
-.search-icon {
-    display: none;
 }
 .login-button {
-    font-size: 13px;
-    line-height: 2.308;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-left: 5px;
 }
 .header-bottom-buttons {
     width: 55%;
@@ -73,6 +82,8 @@
     margin: auto;
 }
   
+
+
 
 .main-content-wrapper {
     background: #f1f5f8;
