@@ -6,8 +6,12 @@
 }
 .button span {
     color: white;
-}                      
+}              
+body {
+    background: red;
+}
 /*Main styling starts here*/
+
 .header {
     background: linear-gradient(rgba(0,0,0,0.702), rgba(0,0,0,0.702)),url("../images/banner.png");
     background-repeat: no-repeat;
@@ -18,32 +22,46 @@
 .logo-area img {
     display: block;
     margin: auto;
-    padding: 16px 0px;
+    padding: 20px 0px;
 }
 .nav-area {
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
     border-top: 2px solid rgba(255, 255, 255, 0.2);
 }
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
 .nav-menu {
     display: none;
-    position: absolute;
-    top: 119px;
-    width: 94.56%;
+    width: calc(60px + 20%);
+    float: left;
+    position: relative;
     background:  rgb(47, 139, 230);
+    border-radius: 12px;
+    padding: 5px;
+    margin: 8px 12px;
+    animation: zoom 0.8s;
 }
 .nav-menu li {
     list-style: none;
+    text-align: center;
 }
 .nav-menu li a {
     text-decoration: none;
     line-height: 2;
     color: white;
+    text-align: center;
 }
 .fa.burger-menu {
     float: left;
     cursor: pointer;
-    font-size: 20px;
-    line-height: 1.6;
+    font-size: 24px;
+    line-height: 1.66;
 }
 .nav-status {
     width: 100%;
@@ -55,19 +73,25 @@
     display: none;
 }
 .fa.cart-icon {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.8;
 }
 .items-counter {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
     border-radius: 50%;
     background-color: rgba(134, 145, 157, 0.502);
+    padding: 2px 5px;
+    position: relative;
+    right: 3px;
+    bottom: 2px;
 }
 .login-button {
-    font-size: 15px;
-    line-height: 1.7;
     margin-left: 5px;
+}
+.login-button span {
+    font-size: 16px;
+    line-height: 1.7;
 }
 .header-bottom-buttons {
     width: 55%;
@@ -81,13 +105,62 @@
     background: #86919d;
     margin: auto;
 }
-  
 
+.header-bottom {
+    display: none;
+}
 
-
+/*Body  styling*/
 .main-content-wrapper {
     background: #f1f5f8;
+    background:red;
 }
+  
+.search-area {
+    width: 100%;
+    margin: 20px auto;
+    background: white;
+    border-radius: 4px;
+}
+.drop-down-search {
+    font-size: calc(8px + 0.4vw);
+    border: none;
+    color: grey;
+    height: 100%;
+    width: 27%;
+    padding: calc(8px + 0.612vw) 8px;
+    border-radius: 4px 0px 0px 4px;
+    border-right: 1px solid #e5e5e5;
+}
+.search-bar-wrapper {
+    padding: calc(8px + 0.612vw) 8px;
+    display: inline-block;
+    width: 49%;
+}
+.search-bar {
+    border: none;
+    height: 100%;
+    color: #7c5d5d;
+    width: 100%;
+    line-height: 1.7;
+}
+.search-bar:focus, .drop-down-search:focus {
+    outline:none;
+}
+.search-button {
+    border: none;
+    background-color: rgb(47, 139, 230);
+    padding: 0px 4px;
+    border-radius: 0px 4px 4px 0px;
+    width: 16%;
+    float: right;
+}
+.search-button span {
+    color: white;
+    font-size: calc(10.7px + 0.9vw);
+    line-height: 2.933;
+}
+
 .join-us-wrapper {
     background: url("../images/join-us-background.png");
     background-repeat: no-repeat;

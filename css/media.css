@@ -2,11 +2,28 @@
     .container {
         width: 100%;
     }
+    .drop-down-search {
+        width: 23%;
+    }
+    .search-bar-wrapper {
+        width: 53%;
+    }
 }
 
 @media only screen and (min-width: 768px) {
     .header {
         background-size: cover;
+    }
+
+    .header-bottom {
+        display: block;
+    }
+    .drop-down-search {
+        width: 16%;
+    }
+    .search-bar-wrapper {
+        width: 60%;
+        padding: calc(10px + 0.8vw) 8px;
     }
 }
 
@@ -22,6 +39,22 @@
         padding: 0px 15px;
         margin: 0px auto;
     }
+    .drop-down-search {
+        font-size: 18px;
+    }
+    .search-bar-wrapper {
+        padding: 24.2px 10px;
+    }
+    .search-bar {
+        font-size: 18px;
+    }
+    .search-button span {
+        font-size: 18px;
+        line-height: 3.9;
+    }
+      
+
+
 
     .contact-area {
         display: block;

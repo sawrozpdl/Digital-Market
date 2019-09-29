@@ -17,8 +17,9 @@
         <div class="logo-area">
           <img src="images/logo-digital-market.png" alt="logo">
         </div>
-        <div class="nav-area">
-          <ul class="nav-menu">
+        <div class="nav-area clearfix">
+          <span id="burger-menu" class="burger-menu fa fa-bars"></span>
+          <ul class="nav-menu" id="nav-menu">
             <li class="nav-home"><a href="#">Home</a></li>
             <li><a href="#">All Items</a></li>
             <li><a href="#">Freebies</a></li>
@@ -26,7 +27,6 @@
             <li><a href="#">Blog</a></li>
           </ul>
           <div class="nav-status clearfix">
-            <span class="burger-menu fa fa-bars"></span>
             <span class="search-icon fa fa-search"></span>
             <div class="cart-area clearfix">
               <span class="cart-icon fa fa-shopping-basket"></span>
@@ -54,6 +54,19 @@
   <div class="body">
     <div class="main-content-wrapper">
         <div class="main-content container">
+
+          <div class="search-area clearfix">
+              <select class = "drop-down-search">
+                  <option value="entire-site">Entire Site</option>
+                  <option value="Amazon">Amazon</option>
+                  <option value="Daraz">Daraz</option>
+                  <option value="E-Bay">E-Bay</option>
+              </select>
+            <div class="search-bar-wrapper">
+                <input class = "search-bar" type="text" placeholder="Search Your Keyword...">
+            </div>
+            <button class="search-button"><span>Search</span></button>
+          </div>
 
         </div>
         <div class="pricing-plans container">
@@ -103,5 +116,13 @@
   </div>
 </body>
 
-<script src="js/script.js" type="text/javascript"></script>
+<script type="text/javascript">
+  document.getElementById('burger-menu').onclick = function(){
+    var tmp = document.getElementById('nav-menu');
+    if (tmp.style.display == "none")
+          tmp.style.display = "block";
+    else  tmp.style.display = "none";
+  };
+  
+</script>
 </html>
