@@ -8,6 +8,27 @@
     .search-bar-wrapper {
         width: 53%;
     }
+
+}
+
+@media only screen and (min-width: 400px) {
+    .results {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(370px, auto));
+        grid-gap: 30px;
+    }
+    .product {
+        width: 370px;
+        margin-bottom: 0px;
+    }
+    
+    .hover-content {
+        height:280px;
+        width: 370px;
+    }
+    .filter-button a {
+        font-size: 14px;
+    } 
 }
 
 @media only screen and (min-width: 768px) {

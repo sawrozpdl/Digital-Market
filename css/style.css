@@ -177,7 +177,7 @@
 .filter-button a {
     text-decoration : none;
     color: black;
-    font-size: 14px;
+    font-size: 10px;
     line-height: 2.143;
 } 
   
@@ -190,20 +190,28 @@
 
 .results {
     margin-top: calc(20px + 2.5%);
+    
 }
 .product {
     list-style: none;
     display: inline-block;
     border-radius: 5px;
-    width: 370px;
+    width: 100%;
     border-bottom: 2px solid #dae1e7;
-    margin-right: 15px;
+    margin: auto;
     margin-bottom: 15px;
+    /* margin: 0px 17px 17px 0px; */
 }
+.product-image {
+    width: 100%;
+    height: auto;
+}
+
 .hover-content {
     background-color: rgba(33, 33, 33, 0.902);
+    border-radius: 5px;
     height:280px;
-    width: 370px;
+    width: 100%;
     position: absolute;
     opacity: 0;
     transition: 0.4s ease;
@@ -233,7 +241,7 @@
 }
 .product-action { 
     position: relative;
-    top: 75px;
+    top: 26.7857%;
 }
 .fa.view-icon, .fa.shop-icon {
     border-radius: 5px;
@@ -281,7 +289,7 @@
 }
 .product-author {
     float: left;
-    width: 60%;
+    width: 61%;
 }
 .author-pic {
     border-radius: 5px;   
