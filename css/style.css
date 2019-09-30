@@ -319,16 +319,194 @@
     padding-right: 3px;
 }
 
+.container.pricing-plans {
+    margin: 80px auto;
+}
+.heading-area {
+    padding: 40px 0px;
+}
+.pricing-pack {
+    padding: 40px 30px;
+    width: 370px;
+    background: white;
+    border-bottom: 2px solid #dae1e7;
+    border-radius: 5px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.pricing-pack:first-child + .pricing-pack {
+    margin: 0px 24px;
+}
+.card-header {
+    font-size: 34px;
+    color: rgb(33, 39, 44);
+    text-align: center;
+}
+.card-info {
+    font-size: 20px;
+    color: rgb(134, 145, 157);
+    line-height: 2.4;
+    text-align: center;
+}
+.pricing-value {
+    padding: 5px 0px;
+    text-align: center;
+}
+.pricing-value span {
+    width: 100%;
+    font-size: 60px;
+    color: rgb(47, 139, 230);
+    line-height: 1.5;
+}
+.pricing-value span::before {
+    content: "$";
+    font-size: 36px;
+    position: relative;
+    bottom: 22px;
+}
+.pricing-value span::after {
+    content: "/month";
+    font-size: 24px;
+}
+.pricing-features li {
+    list-style: none;
+    border-bottom: 1px solid #e9e9e9;  
+}
+.pricing-features li:last-child {
+    border: none;
+}
+.pricing-features li:before {
+    content: ">";
+    padding-right: 20px;
+    color: #a8b2bc;
+}
+.pricing-features li span {
+    font-size: 16px;
+    color: rgb(69, 69, 69);
+    line-height: 3.1;
+}
+.pricing-button-wrapper {
+    text-align: center;
+}
+.pricing-button {
+    width: 100%;
+    margin: 10px 0px;
+}
+.pricing-button span {
+    font-size: 18px;
+    line-height: 2.78;
+}
+.recommended-pack {
+    padding-top: 45px;
+    padding-bottom: 55px;
+}
+.recommended-pack::before {
+    content: "recommended";
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 10px 30px;
+    color:white;
+    font-weight: bold;
+    background: url(../images/ribbon.png);
+    background-repeat: no-repeat;
+    background-position: 2px 2px;
+    position: relative;
+    bottom: 17px;
+    right: 35px;
+}
 
+
+.container.join-us {
+    padding: 45px 15px 65px 15px;
+    margin: 50px auto;
+} 
+.newsletter-warning {
+    font-size: 12px;
+    line-height: 3.2;
+}
+.search-area.newsletter-area {
+    position: static;
+    width: 55%;
+}
 
 .join-us-wrapper {
     background: url("../images/join-us-background.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
+
 .testimonials-wrapper {
     background: #f1f5f8;
+    margin-bottom: 50px;
 }
+.testimonial {
+    width: 570px;
+    display: inline-block;
+    margin-bottom: 26px;
+}
+.testimonial:first-child, .testimonial:first-child + .testimonial + .testimonial{
+    margin-right: 26px;
+}
+.message-box {
+    background: url(../images/message-box.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 230px;
+    padding: 8.5% 7%;
+    font-size: 18px;
+    color: rgb(68, 69, 70);
+    font-style: italic;
+    line-height: 1.611;
+    box-sizing: border-box;
+}
+.message-author {
+    width: 90%;
+    margin: 5px auto;
+}
+.message-author-image {
+    border-radius: 50%;
+    border:5px solid #dae1e7;
+}
+.message-author-info {
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+    bottom: 19px;
+}
+.message-author-name {
+    font-size: 16px;
+    color: rgb(69, 69, 69);
+    font-weight: bold;
+    display: block;
+}
+.message-author-profession {
+    font-size: 16px;
+    color: #a7b2bc;
+}
+
+
+.create-own-wrapper {
+    background: white;
+}
+.container.create-own {
+    padding: 30px 15px 60px 15px;
+}
+.free-ebook-button-wrapper {
+    text-align: center;
+}
+.free-ebook-button span {
+    font-size: 18px;
+    line-height: 3.34;
+}
+
+
+
+
+
 
 /*Styling footer*/
 .footer {

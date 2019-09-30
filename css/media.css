@@ -212,6 +212,83 @@
     }
 
 
+
+
+
+
+
+
+    .footer-top {
+        padding: 70px 0px;
+    }
+    .footer-bottom {
+        border-top: 1px solid #2c3237;
+    }
+    .footer-head {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.389;
+        color: white;
+    }
+    .footer-text {
+        font-size: 16px;
+        line-height: 1.375;
+    }
+    .footer-digital {
+        width: 24.6%;
+        display: inline-block;
+    }
+    .footer-quick-links {
+        width: 24.6%;
+        display: inline-block;
+    }
+    .footer-nav li {
+        list-style: none;
+        border-bottom: 1px solid #383d42;
+    }
+    .footer-nav li:last-child {
+        border-bottom: none;
+    }
+    .footer-nav li a {
+        text-decoration: none;
+        color: rgb(218, 225, 231);
+    }
+    .footer-recent-posts {
+        width: 24.7%;
+        display: inline-block;
+    }
+    .footer-post {
+        list-style: none;
+    }
+    .footer-post:first-child {
+        border-bottom: 1px solid #383d42;
+    }
+    .footer-date {
+        color: #89939d;
+    }
+    .footer-newsletter {
+        width: 25%;
+        display: inline-block;
+    }
+
+
+
+    .search-area.footer-newsletter-area {
+        position: static;
+        width: 100%;
+        display: inline-block;
+    }
+    .footer-newsletter-area .search-button {
+        width: 30%;
+    }
+    .footer-newsletter-area .search-button span {
+        font-size: 17px;
+        line-height: 2.9;
+    }
+    .footer-newsletter-area .search-bar-wrapper {
+        padding: 13px 10px;
+    }
+
     .contact-area {
         display: block;
         float: right;
