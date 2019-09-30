@@ -227,20 +227,29 @@
     .footer-head {
         font-size: 18px;
         font-weight: bold;
-        line-height: 1.389;
+        line-height: 2.4;
         color: white;
     }
     .footer-text {
         font-size: 16px;
-        line-height: 1.375;
+        line-height: 1.5;
+        margin: 10px 0px;
     }
     .footer-digital {
         width: 24.6%;
         display: inline-block;
+        padding-right: 20px;
+        box-sizing: border-box;
+        position: relative;
+        bottom: 67px;
     }
     .footer-quick-links {
         width: 24.6%;
         display: inline-block;
+        padding-right: 20px;
+        box-sizing: border-box;
+        position: relative;
+        bottom: 12px;
     }
     .footer-nav li {
         list-style: none;
@@ -252,10 +261,13 @@
     .footer-nav li a {
         text-decoration: none;
         color: rgb(218, 225, 231);
+        line-height: 2.5
     }
     .footer-recent-posts {
         width: 24.7%;
         display: inline-block;
+        padding-right: 20px;
+        box-sizing: border-box;
     }
     .footer-post {
         list-style: none;
@@ -265,10 +277,13 @@
     }
     .footer-date {
         color: #89939d;
+        line-height: 2.5;
     }
     .footer-newsletter {
         width: 25%;
         display: inline-block;
+        position: relative;
+        bottom: 63px;
     }
 
 
@@ -276,6 +291,7 @@
     .search-area.footer-newsletter-area {
         position: static;
         width: 100%;
+        margin-top: 40px;
         display: inline-block;
     }
     .footer-newsletter-area .search-button {
