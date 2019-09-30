@@ -210,8 +210,8 @@
 .hover-content {
     background-color: rgba(33, 33, 33, 0.902);
     border-radius: 5px;
-    height:280px;
-    width: 100%;
+    height: 71.7vw;
+    width: 94.6vw;
     position: absolute;
     opacity: 0;
     transition: 0.4s ease;
@@ -219,7 +219,7 @@
 .product-status {
     background: #ebebeb;
     border-radius: 3px;
-    width: 31%;
+    width: 36%;
     padding: 0px 9px;
     margin: 10px;
 }
@@ -241,7 +241,7 @@
 }
 .product-action { 
     position: relative;
-    top: 26.7857%;
+    top: 15vw;
 }
 .fa.view-icon, .fa.shop-icon {
     border-radius: 5px;

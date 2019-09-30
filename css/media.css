@@ -29,6 +29,12 @@
     .filter-button a {
         font-size: 14px;
     } 
+    .product-status {
+        width: 31%;
+    }
+    .product-action { 
+        top: 26.7857%;
+    }
 }
 
 @media only screen and (min-width: 768px) {
