@@ -193,11 +193,12 @@
 }
 .product {
     list-style: none;
+    display: inline-block;
     border-radius: 5px;
     width: 370px;
     border-bottom: 2px solid #dae1e7;
-    margin-right: 30px;
-    margin-bottom: 30px;
+    margin-right: 15px;
+    margin-bottom: 15px;
 }
 .hover-content {
     background-color: rgba(33, 33, 33, 0.902);
@@ -240,6 +241,7 @@
     color: rgb(33, 33, 33);
     line-height: 1.9;
     padding: 0px 9px;
+    cursor: pointer;
 }
 .fa.view-icon {
     background: white;
@@ -330,7 +332,7 @@
 }
 .copyright-area span {
     font-size: 14px;
-    line-height: 1.714;
+    line-height: 4;
 }
 
 .contact-area {

@@ -197,9 +197,9 @@
     .contact-area li a{
         text-decoration: none;
     }
-    .fa {
+    .fa.footer-social-icon {
         color: white;
         font-size: 16px;
-        line-height: 2.688;
+        line-height: 3.5;
     }
 }
