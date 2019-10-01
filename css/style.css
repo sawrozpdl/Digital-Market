@@ -537,5 +537,6 @@
     display: none; /*User can just slide up easily*/
 }
 .image-slider {
-    display: none; /*User can slide using swipe*/
+    display: none; /*User can slide up using swipe*/
 }
+
