@@ -21,7 +21,9 @@
         width: 370px;
         margin-bottom: 0px;
     }
-    
+
+
+   
     .hover-content {
         height:280px;
         width: 370px;
@@ -85,14 +87,70 @@
         width: 60%;
         padding: calc(10px + 0.8vw) 8px;
     }
+
+    .testimonial {
+        width: 80%;
+        margin: auto;
+    }
+
+    .pricing-pack {
+        padding: 40px 20px;
+        width: 60%;
+        margin: 15px auto;
+    }
+    .recommended-pack {
+        padding: 45px 20px;
+    }
+     .card-info {
+        padding: 0px;
+        line-height: 2.4;
+    } 
+
+    .testimonial {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+    .testimonial:first-child, .testimonial:first-child + .testimonial + .testimonial{
+        margin-right: 3.3854%;
+    }
+    .message-box {
+        height: 230px;
+    }
 }
 
 @media only screen and (min-width: 940px) {
-    
+    .pricing-pack {
+        padding: 20px 10px;
+        width: 31.2%;
+    }
+    .recommended-pack {
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+    .pricing-pack:first-child + .pricing-pack {
+        margin: 0px 24px;
+    }
+
+    .testimonial:first-child, .testimonial:first-child + .testimonial + .testimonial{
+        margin-right: 26px;
+    }
 
 }
 
 @media only screen and (min-width: 1200px) {
+
+    .testimonial {
+        width: 570px;
+    }
+
+
+    .pricing-pack {
+        width: 370px;
+    }
+    .recommended-pack {
+        padding-top: 45px;
+        padding-bottom: 55px;
+    }
 
     .container {
         max-width: 1200px;
@@ -241,6 +299,7 @@
 
 
     .footer-top {
+        display: block;
         padding: 70px 0px;
     }
     .footer-bottom {

@@ -325,17 +325,16 @@
     padding: 30px 0px;
 }
 .pricing-pack {
-    padding: 40px 30px;
-    width: 370px;
+    padding: 15px 25px;
+    width: 100%;
+    margin: 10px auto;
     background: white;
     border-bottom: 2px solid #dae1e7;
     border-radius: 5px;
     display: inline-block;
     box-sizing: border-box;
 }
-.pricing-pack:first-child + .pricing-pack {
-    margin: 0px 24px;
-}
+
 .card-header {
     font-size: 34px;
     color: rgb(33, 39, 44);
@@ -345,6 +344,8 @@
     font-size: 20px;
     color: rgb(134, 145, 157);
     line-height: 2.4;
+    line-height: 1.4;
+    padding: 15px 0px;
     text-align: center;
 }
 .pricing-value {
@@ -396,8 +397,8 @@
     line-height: 2.78;
 }
 .recommended-pack {
-    padding-top: 45px;
-    padding-bottom: 55px;
+    padding-top: 25px;
+    padding-bottom: 35px;
 }
 .recommended-pack::before {
     content: "recommended";
@@ -442,19 +443,17 @@
     margin-bottom: 50px;
 }
 .testimonial {
-    width: 570px;
+    width: 100%;
     display: inline-block;
-    margin-bottom: 26px;
+    margin: 0px auto 26px auto;
 }
-.testimonial:first-child, .testimonial:first-child + .testimonial + .testimonial{
-    margin-right: 26px;
-}
+
 .message-box {
     background: url(../images/message-box.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     width: 100%;
-    height: 230px;
+    height: auto;
     padding: 8.5% 7%;
     font-size: 18px;
     color: rgb(68, 69, 70);
@@ -463,25 +462,23 @@
     box-sizing: border-box;
 }
 .message-author {
-    width: 90%;
-    margin: 5px auto;
+    width: 100%;
+    margin: 5px 28px 0px 28px;
 }
 .message-author-image {
     border-radius: 50%;
     border:5px solid #dae1e7;
+    float: left;
 }
 .message-author-info {
-    display: inline-block;
-    margin-left: 10px;
-    position: relative;
-    bottom: 19px;
+    margin-left: 85px;
 }
 .message-author-name {
     font-size: 16px;
     color: rgb(69, 69, 69);
     font-weight: bold;
     display: block;
-    line-height: 2;
+    line-height: 2.5;
 }
 .message-author-profession {
     font-size: 16px;
@@ -525,7 +522,9 @@
     display: none;
 }
 
-
+.footer-top {
+    display: none;
+}
 .go-top-button {
     display: none; /*User can just slide up easily*/
 }
