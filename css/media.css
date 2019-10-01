@@ -235,21 +235,25 @@
         line-height: 1.5;
         margin: 10px 0px;
     }
+    .footer-top-left {
+       float: left; 
+       width: 50%;
+    }
+    .footer-top-right {
+        float: right;
+        width: 50%;
+    }
     .footer-digital {
-        width: 24.6%;
-        display: inline-block;
+        width:50%;
+        float: left;
         padding-right: 20px;
         box-sizing: border-box;
-        position: relative;
-        bottom: 67px;
     }
     .footer-quick-links {
-        width: 24.6%;
-        display: inline-block;
+        width: 50%;
+        float: right;
         padding-right: 20px;
         box-sizing: border-box;
-        position: relative;
-        bottom: 12px;
     }
     .footer-nav li {
         list-style: none;
@@ -264,8 +268,8 @@
         line-height: 2.5
     }
     .footer-recent-posts {
-        width: 24.7%;
-        display: inline-block;
+        width: 50%;
+        float: left;
         padding-right: 20px;
         box-sizing: border-box;
     }
@@ -280,14 +284,9 @@
         line-height: 2.5;
     }
     .footer-newsletter {
-        width: 25%;
-        display: inline-block;
-        position: relative;
-        bottom: 63px;
+        width: 50%;
+        float: right;
     }
-
-
-
     .search-area.footer-newsletter-area {
         position: static;
         width: 100%;

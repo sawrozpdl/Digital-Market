@@ -323,7 +323,7 @@
     margin: 80px auto;
 }
 .heading-area {
-    padding: 40px 0px;
+    padding: 30px 0px;
 }
 .pricing-pack {
     padding: 40px 30px;
@@ -482,6 +482,7 @@
     color: rgb(69, 69, 69);
     font-weight: bold;
     display: block;
+    line-height: 2;
 }
 .message-author-profession {
     font-size: 16px;
