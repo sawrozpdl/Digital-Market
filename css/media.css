@@ -88,15 +88,11 @@
         padding: calc(10px + 0.8vw) 8px;
     }
 
-    .testimonial {
-        width: 80%;
-        margin: auto;
-    }
-
     .pricing-pack {
         padding: 40px 20px;
-        width: 60%;
-        margin: 15px auto;
+        width: 100%;
+        margin:30px 0px;
+        text-align: center;
     }
     .recommended-pack {
         padding: 45px 20px;
@@ -115,6 +111,28 @@
     }
     .message-box {
         height: 230px;
+    }
+
+    .contact-area {
+        display: block;
+    }
+
+    .contact-area {
+        display: block;
+        float: right;
+    }
+    .contact-area li {
+        list-style: none;
+        float: left;
+        margin-left: 20px;
+    }
+    .contact-area li a{
+        text-decoration: none;
+    }
+    .fa.footer-social-icon {
+        color: white;
+        font-size: 16px;
+        line-height: 3.5;
     }
 }
 
@@ -135,6 +153,13 @@
         margin-right: 26px;
     }
 
+    .search-area.newsletter-area .search-button {
+        width: 20%;
+    }
+    .search-area.newsletter-area .search-button span {
+        font-size: 17px;
+        line-height: 2.9;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -146,6 +171,7 @@
 
     .pricing-pack {
         width: 370px;
+        padding: 40px 30px;
     }
     .recommended-pack {
         padding-top: 45px;
@@ -385,23 +411,7 @@
         padding: 13px 10px;
     }
 
-    .contact-area {
-        display: block;
-        float: right;
-    }
-    .contact-area li {
-        list-style: none;
-        float: left;
-        margin-left: 20px;
-    }
-    .contact-area li a{
-        text-decoration: none;
-    }
-    .fa.footer-social-icon {
-        color: white;
-        font-size: 16px;
-        line-height: 3.5;
-    }
+
 
     .go-top-button {
         display: block;

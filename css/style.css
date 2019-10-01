@@ -427,7 +427,17 @@
 }
 .search-area.newsletter-area {
     position: static;
-    width: 55%;
+    width: 60%;
+}
+.search-area.newsletter-area .search-button {
+    width: 35%;
+}
+.search-area.newsletter-area .search-button span {
+    font-size: 15px;
+    line-height: 3;
+}
+.search-area.newsletter-area .search-bar-wrapper {
+    padding: 13px 10px;
 }
 
 .join-us-wrapper {
