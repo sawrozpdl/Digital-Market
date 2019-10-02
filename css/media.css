@@ -347,6 +347,7 @@
         bottom: 40px;
         left: 10px;
         width: 60px;
+        float: left;
     }
     .left-slider {
         float: left; 
