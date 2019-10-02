@@ -13,17 +13,10 @@
 
 @media only screen and (min-width: 400px) {
     .results {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(370px, auto));
-        grid-gap: 30px;
-    }
-    .product {
         width: 370px;
-        margin-bottom: 0px;
+        margin: 30px auto;
     }
 
-
-   
     .hover-content {
         height:280px;
         width: 370px;
@@ -40,6 +33,24 @@
 }
 
 @media only screen and (min-width: 768px) {
+
+    .results {
+        width: 90%;
+        margin: 30px auto;
+    }
+    .product {
+        width: 45%;
+    }
+    .product:nth-child(2n - 1) {
+        margin-right: 38px;
+    }
+    .hover-content {
+        height: 29.5vw;
+        width: 38.5vw;
+    }
+    .product-status {
+        width: 38%;
+    }
     .header {
         background-size: cover;
         background-position: center;
@@ -139,6 +150,7 @@
 }
 
 @media only screen and (min-width: 940px) {
+
     .pricing-pack {
         padding: 20px 10px;
         width: 31.2%;
@@ -165,7 +177,19 @@
 }
 
 @media only screen and (min-width: 1200px) {
-
+    .results {
+        width: 100%;
+    }
+    .product {
+        width: 370px;
+        margin-bottom: 23px;
+    }
+    .product:nth-child(2n - 1) {
+        margin-right: 0px;
+    }
+    .product:nth-child(3n-1) {
+        margin: 0px 23px;
+    }
     .recommended-pack::before {
         bottom: 17px;
         right: 35px; 
