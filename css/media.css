@@ -45,11 +45,11 @@
         margin-right: 38px;
     }
     .hover-content {
-        height: 29.7vw;
-        width: 39.5vw;
+        height: 30.1vw;
+        width: 39.6vw;
     }
     .product-status {
-        width: 38%;
+        width: 36%;
     }
     .header {
         background-size: cover;
@@ -150,6 +150,9 @@
 }
 
 @media only screen and (min-width: 940px) {
+    .product-status {
+        width: 28%;
+    }
 
     .pricing-pack {
         padding: 20px 10px;
