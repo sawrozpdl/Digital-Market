@@ -11,6 +11,7 @@
 /*Main styling starts here*/
 
 .header {
+    background: rgba(0, 0, 0, 0.7); /*Fallback for IE9 and below*/
     background: linear-gradient(rgba(0,0,0,0.702), rgba(0,0,0,0.702)),url("../images/banner.png");
     background-repeat: no-repeat;
     background-size: cover;
