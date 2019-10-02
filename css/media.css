@@ -45,8 +45,8 @@
         margin-right: 38px;
     }
     .hover-content {
-        height: 29.5vw;
-        width: 38.5vw;
+        height: 29.7vw;
+        width: 39.5vw;
     }
     .product-status {
         width: 38%;
@@ -189,6 +189,13 @@
     }
     .product:nth-child(3n-1) {
         margin: 0px 23px;
+    }
+    .product-status {
+        width: 32%;
+    }
+    .hover-content {
+        height: 280px;
+        width: 370px;
     }
     .recommended-pack::before {
         bottom: 17px;
