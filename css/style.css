@@ -321,6 +321,50 @@
     padding-right: 3px;
 }
 
+
+.image-slider {
+    display: block;
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    width: 85%;
+    float: left;
+}
+.image-slider-left {
+    float: left;
+}
+.image-slider-right {
+    float: right;
+}
+.left-slider {
+    float: left; 
+    background: #2f8be6;
+    margin-right: 5px;
+}
+.right-slider {
+    float: right;
+    background: #d8dfe5;
+}
+.fa.left-slider, .fa.right-slider, .image-slider-right span {
+    padding: 0px 10px;
+    color: white;
+    border-radius: 4px;
+    font-size: 13px;
+    line-height: 2.2;
+    cursor: pointer;
+}
+.image-slider-right span {
+    padding: 0px 13px;
+    background: #2f8be6;
+    position: absolute;
+    z-index: 3;
+}
+
+.info-hover {
+    opacity: 1;
+    z-index: 2;
+}
+
 .container.pricing-plans {
     margin: 80px auto;
 }
@@ -538,9 +582,6 @@
 }
 .go-top-button {
     display: none; /*User can just slide up easily*/
-}
-.image-slider {
-    display: none; /*User can slide up using swipe*/
 }
 .display {
     display: block;

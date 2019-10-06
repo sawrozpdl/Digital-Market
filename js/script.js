@@ -47,8 +47,9 @@ function Carousel(container, controls, width, responsive, delay, direction, fps,
         this.mainContainer.appendChild(this.arrowNext);
 
         this.indexArea = document.createElement('div');
-        this.indexArea.style.position = 'absolute'
-        this.indexArea.style.bottom = '5px';
+        this.indexArea.style.position = 'absolute';
+        this.indexArea.style.zIndex = "1";
+        this.indexArea.style.bottom = '5%';
         this.mainContainer.appendChild(this.indexArea);
 
         imageWidth = images[0].naturalWidth;
@@ -207,7 +208,7 @@ info.onclick = function () {
     //document.getElementsByClassName('hover-content')[3].classList.toggle('info-hover'); //no transition with this
     var hcontent = document.getElementsByClassName('hover-content')[3];
     if (hcontent.style.opacity == 1) {
-        hcontent.style.zIndex = "1";
+        hcontent.style.zIndex = "0";
         hcontent.style.opacity = "0";
     } else {
         hcontent.style.zIndex = "2";
