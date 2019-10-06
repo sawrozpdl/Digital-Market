@@ -1,4 +1,4 @@
-function Carousel(container,controls, width, delay, direction, fps, speed) {
+function Carousel(container, controls, width, delay, direction, fps, speed) {
 
     this.mainContainer = container;
     this.controls = controls;
@@ -8,7 +8,7 @@ function Carousel(container,controls, width, delay, direction, fps, speed) {
     this.FRAME_PER_SECOND = fps;
     this.SLIDE_DIRECTION = direction;
     this.SPEED = speed;
-    this.WIDTH_RATE = 10 * this.SPEED;
+    this.WIDTH_RATE = 5 * this.SPEED;
 
     this.indexArea = null;
     this.arrowNext = null;
@@ -153,11 +153,11 @@ function Carousel(container,controls, width, delay, direction, fps, speed) {
 
     var that = this;
 
-    this.goLeft = function() {
+    this.goLeft = function () {
         that.arrowPrev.click();
     }
 
-    this.goRight = function() {
+    this.goRight = function () {
         that.arrowNext.click();
     }
 
@@ -173,32 +173,32 @@ function Carousel(container,controls, width, delay, direction, fps, speed) {
     startStuff();
 }
 
+var container = document.getElementsByClassName('carousel-container')[0];
+var slider = new Carousel(container, false, 0, 2, 1, 60, 1);
+
+var leftSpan = document.getElementsByClassName("left-slider")[0];
+leftSpan.onclick = function () {
+    slider.goLeft();
+}
+
+var rightSpan = document.getElementsByClassName("right-slider")[0];
+rightSpan.onclick = function () {
+    slider.goRight();
+}
+
 
 document.getElementById('burger-menu').onclick = function () {
     document.getElementById('nav-menu').classList.toggle('display');
 };
 
-var container = document.getElementsByClassName('carousel-container')[0];
-var slider = new Carousel(container, false, 0, 2, 1, 60, 1);
-
-var leftSpan = document.getElementsByClassName("left-slider")[0];
-leftSpan.onclick = function() {
-    console.log("cliiked");
-    slider.goLeft();
-}
-var rightSpan = document.getElementsByClassName("right-slider")[0];
-rightSpan.onclick = function() {
-    slider.goRight();
-}
-
 var info = document.getElementsByClassName('image-slider-right')[0];
-info.onclick = function() {
+info.onclick = function () {
+    //document.getElementsByClassName('hover-content')[3].classList.toggle('info-hover'); //no transition with this
     var hcontent = document.getElementsByClassName('hover-content')[3];
     if (hcontent.style.opacity == 1) {
         hcontent.style.zIndex = "1";
         hcontent.style.opacity = "0";
-    }
-    else {
+    } else {
         hcontent.style.zIndex = "2";
         hcontent.style.opacity = "1";
     }
