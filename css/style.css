@@ -3,6 +3,7 @@
     border-radius: 4px;
     background-color: rgb(47, 139, 230);
     padding: 0px 26px;
+    cursor: pointer;
 }
 .button span {
     color: white;
@@ -11,7 +12,7 @@
 /*Main styling starts here*/
 
 .header {
-    background: rgba(0, 0, 0, 0.7); /*Fallback for IE9 and below*/
+    background:url("../images/ie-fallback-banner.png"); /*Fallback for IE9 and below*/
     background: linear-gradient(rgba(0,0,0,0.702), rgba(0,0,0,0.702)),url("../images/banner.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -240,8 +241,9 @@
     float:right;
 }
 .product-action { 
-    position: relative;
-    top: 15vw;
+    position: absolute;
+    top: 45%;
+    left: 38%;
 }
 .fa.view-icon, .fa.shop-icon {
     border-radius: 5px;
@@ -262,6 +264,7 @@
 }
 .thumbnail {
     background: white;
+    position: relative;
 }
 .thumbnail:hover .hover-content{
     opacity: 1;
@@ -539,5 +542,8 @@
 }
 .image-slider {
     display: none; /*User can slide up using swipe*/
+}
+.display {
+    display: block;
 }
 

@@ -27,9 +27,6 @@
     .product-status {
         width: 31%;
     }
-    .product-action { 
-        top: 26.7857%;
-    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -180,6 +177,7 @@
 }
 
 @media only screen and (min-width: 1200px) {
+
     .results {
         width: 100%;
     }
@@ -339,19 +337,28 @@
         width: 71%;
     }
 
-
+    .thumbnail {
+        position: relative;
+    }
 
     .image-slider {
         display: block;
-        position: relative;
-        bottom: 40px;
+        position: absolute;
+        bottom: 15px;
         left: 10px;
-        width: 60px;
+        width: 85%;
         float: left;
+    }
+    .image-slider-left {
+        float: left;
+    }
+    .image-slider-right {
+        float: right;
     }
     .left-slider {
         float: left; 
         background: #2f8be6;
+        margin-right: 5px;
     }
     .right-slider {
         float: right;
@@ -364,6 +371,17 @@
         font-size: 15px;
         line-height: 1.8;
         cursor: pointer;
+    }
+
+    .image-slider-right span {
+        background: #2f8be6;
+        line-height: 2;
+        font-size: 13px;
+        color: white;
+        border-radius: 4px;
+        padding:  0px 12px;
+        position: absolute;
+        z-index: 3;
     }
 
 
