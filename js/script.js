@@ -1,9 +1,10 @@
-function Carousel(container, controls, width, delay, direction, fps, speed) {
+function Carousel(container, controls, width, responsive, delay, direction, fps, speed) {
 
     this.mainContainer = container;
     this.controls = controls;
     this.imageWrapper = this.mainContainer.getElementsByClassName('carousel-image-wrapper')[0];
     this.WIDTH = width;
+    this.responsive = responsive;
     this.IMAGE_STAY = delay;
     this.FRAME_PER_SECOND = fps;
     this.SLIDE_DIRECTION = direction;
@@ -66,7 +67,7 @@ function Carousel(container, controls, width, delay, direction, fps, speed) {
     }.bind(this);
 
     var startStuff = function () {
-
+        console.log("here");
         for (var i = 0; i < images.length; i++) {
             element = images[i];
             element.style.float = 'left';
@@ -82,9 +83,9 @@ function Carousel(container, controls, width, delay, direction, fps, speed) {
         spanFont = imageHeight / 16;
 
         this.mainContainer.style.width = imageWidth + 'px';
-        this.mainContainer.style.height = imageHeight + 'px'; //imp   
+        this.mainContainer.style.height = imageHeight + 'px';   
         this.imageWrapper.style.width = wrapperWidth + 'px';
-        this.imageWrapper.style.height = imageHeight + 'px';
+        this.imageWrapper.style.height = imageHeight + 'px'; 
 
         this.arrowPrev.style.fontSize = spanFont;
         this.arrowNext.style.fontSize = spanFont;
@@ -171,10 +172,20 @@ function Carousel(container, controls, width, delay, direction, fps, speed) {
     }
     init();
     startStuff();
+
+    this.stopSlider = function() {
+        clearInterval();
+    }
+
+    window.onresize = function() {
+        if (!this.responsive) return;
+        this.WIDTH = this.mainContainer.parentElement.clientWidth;
+        startStuff();
+    }.bind(this);
 }
 
 var container = document.getElementsByClassName('carousel-container')[0];
-var slider = new Carousel(container, false, 0, 2, 1, 60, 1);
+var slider = new Carousel(container, false, container.parentElement.clientWidth, true, 2, 1, 60, 1);
 
 var leftSpan = document.getElementsByClassName("left-slider")[0];
 leftSpan.onclick = function () {
