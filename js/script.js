@@ -68,7 +68,6 @@ function Carousel(container, controls, width, responsive, delay, direction, fps,
     }.bind(this);
 
     var startStuff = function () {
-        console.log("here");
         for (var i = 0; i < images.length; i++) {
             element = images[i];
             element.style.float = 'left';
@@ -84,9 +83,9 @@ function Carousel(container, controls, width, responsive, delay, direction, fps,
         spanFont = imageHeight / 16;
 
         this.mainContainer.style.width = imageWidth + 'px';
-        this.mainContainer.style.height = imageHeight + 'px';   
+        this.mainContainer.style.height = imageHeight + 'px';
         this.imageWrapper.style.width = wrapperWidth + 'px';
-        this.imageWrapper.style.height = imageHeight + 'px'; 
+        this.imageWrapper.style.height = imageHeight + 'px';
 
         this.arrowPrev.style.fontSize = spanFont;
         this.arrowNext.style.fontSize = spanFont;
@@ -174,11 +173,11 @@ function Carousel(container, controls, width, responsive, delay, direction, fps,
     init();
     startStuff();
 
-    this.stopSlider = function() {
+    this.stopSlider = function () {
         clearInterval();
     }
 
-    window.onresize = function() {
+    window.onresize = function () {
         if (!this.responsive) return;
         this.WIDTH = this.mainContainer.parentElement.clientWidth;
         startStuff();
@@ -214,4 +213,8 @@ info.onclick = function () {
         hcontent.style.zIndex = "2";
         hcontent.style.opacity = "1";
     }
+}
+
+document.getElementsByClassName('go-top-button')[0].onclick = function () {
+    document.documentElement.scrollTop = 0;
 }

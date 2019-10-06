@@ -1,4 +1,5 @@
-.clearfix:before, .clearfix:after {
+.clearfix:before,
+.clearfix:after {
     display: table;
     content: "";
 }
@@ -16,6 +17,3 @@
 .logo-area {
     width: 100%;
 }
-
-
-  
