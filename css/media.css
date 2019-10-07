@@ -61,11 +61,6 @@
         width: 44%;
     }
 
-    .header {
-        background-size: cover;
-        background-position: center;
-    }
-
     .header-content {
         padding-bottom: 0.1%;
     }
@@ -369,6 +364,13 @@
 
     .header-bottom p {
         margin: 30px auto;
+    }
+
+    .search-area.newsletter-area {
+        width: 50%;
+    }
+    .search-area.newsletter-area .search-bar-wrapper{
+        width: 80%;
     }
 
 

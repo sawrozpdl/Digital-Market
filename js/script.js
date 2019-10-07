@@ -57,13 +57,14 @@ function Carousel(container, controls, width, responsive, delay, direction, fps,
         imageCount = images.length;
         spanFont = imageHeight / 16;
         for (var foot = 0; foot < imageCount; foot++) {
-            var temp = document.createElement('div');
+            var temp = document.createElement('span');
             temp.setAttribute('id', 'index' + foot);
             temp.style.display = 'inline-block';
             temp.setAttribute('index', foot);
             this.indexArea.appendChild(temp);
         }
-        this.indexArea.style.left = ((imageWidth - spanFont * (2 * imageCount - 1) / 2) / 2) + 'px';
+        this.indexArea.style.width = "100%";
+        this.indexArea.style.textAlign = "center";
         this.indexArea.childNodes[0].classList.add('active');
     }.bind(this);
 
@@ -87,10 +88,8 @@ function Carousel(container, controls, width, responsive, delay, direction, fps,
         this.imageWrapper.style.width = wrapperWidth + 'px';
         this.imageWrapper.style.height = imageHeight + 'px';
 
-        this.arrowPrev.style.fontSize = spanFont;
-        this.arrowNext.style.fontSize = spanFont;
-        this.arrowPrev.style.padding = `0px ${spanFont / 2}px`;
-        this.arrowNext.style.padding = `0px ${spanFont / 2}px`;
+        this.arrowPrev.style.padding = `${spanFont / 2}px ${spanFont / 2}px`;
+        this.arrowNext.style.padding = `${spanFont / 2}px ${spanFont / 2}px`;
         this.arrowPrev.style.top = ((imageHeight - spanFont * 2) / 2) + 'px';
         this.arrowNext.style.top = this.arrowPrev.style.top;
 
