@@ -173,10 +173,6 @@ function Carousel(container, controls, width, responsive, delay, direction, fps,
     init();
     startStuff();
 
-    this.stopSlider = function () {
-        clearInterval();
-    }
-
     window.onresize = function () {
         if (!this.responsive) return;
         this.WIDTH = this.mainContainer.parentElement.clientWidth;
