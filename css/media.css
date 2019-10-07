@@ -11,6 +11,10 @@
         width: 53%;
     }
 
+    .product-status {
+        width: 38%;
+    }
+
 }
 
 @media only screen and (min-width: 400px) {
@@ -29,7 +33,7 @@
     }
 
     .product-status {
-        width: 31%;
+        width: 35%;
     }
 }
 
@@ -54,7 +58,7 @@
     }
 
     .product-status {
-        width: 36%;
+        width: 44%;
     }
 
     .header {
@@ -179,7 +183,7 @@
 
 @media only screen and (min-width: 940px) {
     .product-status {
-        width: 28%;
+        width: 33%;
     }
 
     .pricing-pack {
@@ -231,7 +235,7 @@
     }
 
     .product-status {
-        width: 32%;
+        width: 35%;
     }
 
     .hover-content {
