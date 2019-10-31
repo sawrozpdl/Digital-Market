@@ -7,6 +7,10 @@
     cursor: pointer;
 }
 
+.button:hover {
+    background-color: #86919d;
+}
+
 .button span {
     color: white;
 }
@@ -36,6 +40,12 @@
 .nav-area {
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
     border-top: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.fa.fa-search {
+    position: absolute;
+    color: grey;
+    font-size: 20px;
 }
 
 @keyframes zoom {
@@ -89,6 +99,7 @@
 
 .fa.search-icon {
     display: none;
+    color: white;
 }
 
 .fa.cart-icon {
@@ -158,6 +169,7 @@
     color: #7c5d5d;
     width: 100%;
     line-height: 1.7;
+    padding-left: 31px;
 }
 
 .search-bar:focus,
@@ -375,12 +387,35 @@
     padding: 0px 10px;
     border-radius: 3px;
     background: #f1f5f8;
+    cursor: pointer;
 }
 
 .product-price::before {
     content: "$";
     padding-right: 3px;
 }
+
+.product-price::after {
+    content: "60.00";
+}
+
+.free-product::before {
+    content: "";
+}
+
+.free-product::after {
+    content: "FREE";
+}
+
+.free-product {
+    letter-spacing: 0.5px;
+}
+
+.product-price:hover {
+    background: #2f8be6;
+    color:  white;
+}
+
 
 
 .image-slider {
@@ -408,7 +443,11 @@
 
 .right-slider {
     float: right;
-    background: #d8dfe5;
+    background:  #2f8be6;
+}
+
+.left-slider:hover, .right-slider:hover {
+    background : #d8dfe5;
 }
 
 .fa.left-slider,
